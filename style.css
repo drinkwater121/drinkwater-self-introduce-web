@@ -142,3 +142,42 @@ body.dark .about-section {
 .about-section a:hover {
     text-decoration: underline;
 }
+/* PDF 卡片區塊 */
+.pdf-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pdf-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pdf-btn:hover {
+    opacity: 0.8;
+}
+
+/* 深色模式 */
+body.dark .pdf-card {
+    background-color: #1f1f1f;
+}
